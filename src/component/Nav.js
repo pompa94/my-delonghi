@@ -4,6 +4,7 @@ import './Nav.css'
 // 아이콘 연결
 import {GiEarthAsiaOceania} from 'react-icons/gi'
 import {GrClose} from 'react-icons/gr'
+import {FaSearch} from 'react-icons/fa'
 
 
 
@@ -40,30 +41,34 @@ function Nav(){
             </nav>
             <div className="sub">
                 <dl className="lang">
-                        <dt>
-                            <p>
-                                <GiEarthAsiaOceania />
-                                <span>Korea(Republic of)대한민국</span>
-                            </p>
-                        </dt>
-                        <dd>
-                            <p><GrClose /></p>
-                            <dl>
-                                <dd>
-                                    <span>KOR</span>
-                                </dd>
-                                <dd>
-                                    <span>ENG</span>
-                                </dd>
-                                <dd>
-                                    <span>JPN</span>
-                                </dd>
-                                <dd>
-                                    <span>GER</span>
-                                </dd>
-                            </dl>
-                        </dd>
-                    </dl>        
+                    <dt>
+                        <p>
+                            <GiEarthAsiaOceania />
+                            <span>Korea(Republic of)대한민국</span>
+                        </p>
+                    </dt>
+                    <dd>
+                        <p><GrClose /></p>
+                        <dl>
+                            <dd>
+                                <span>KOR</span>
+                            </dd>
+                            <dd>
+                                <span>ENG</span>
+                            </dd>
+                            <dd>
+                                <span>JPN</span>
+                            </dd>
+                            <dd>
+                                <span>GER</span>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+                <dl class="search">
+                    <dt><input type="text" placeholder="검색" /></dt>
+                    <dd><FaSearch /></dd>
+                </dl>        
             </div>
 
             </div>

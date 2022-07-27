@@ -1,0 +1,47 @@
+#product{
+    width: 75%;
+}
+#product>ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#product>ul>li{
+    width: 33.3333%;
+    margin-bottom: 50px;
+}
+#product figure{
+    /* background-color: red; */
+    text-align: center;
+    cursor: pointer;
+}
+#product figure>img{
+    margin-bottom: 20px;
+}
+#product figure>figcaption{}
+#product figure>figcaption>dl{}
+#product figure>figcaption>dl>dt{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(4, 194, 194);
+}
+#product figure>figcaption>dl>dd{
+    display: flex;
+    flex-wrap: wrap;
+}
+#product figure>figcaption>dl>dd>dl{
+    width: 50%;
+    margin-bottom: 20px;
+    color: #666;
+}
+#product figure>figcaption>dl>dd>dl>dt{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#product figure>p>button{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+}

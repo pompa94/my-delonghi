@@ -6,7 +6,7 @@ function Footer(){
     return(
         <footer>
             <div>
-                <ul>
+                <ul className="footerMenu">
                     <li>
                         <a href="#">커피</a>
                     </li>
@@ -21,7 +21,8 @@ function Footer(){
                     </li>
                 </ul>
             </div>
-            <ul>
+            
+            <ul className="footerInfo">
                 <li>
                     <a href="#">개인정보보호정책</a>
                 </li>

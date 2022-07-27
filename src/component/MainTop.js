@@ -13,7 +13,7 @@ function MainTop(){
                 <li><AiFillCaretRight /></li>
                 <li>커피머신</li>
             </ul>
-            <h2>전자동 커피머신</h2>
+            <h2>드롱기 커피머신</h2>
         </div>
     )
 }
