@@ -1,0 +1,51 @@
+header{
+    background-color: red;
+}
+
+img{
+    max-width: 100%;
+  }
+
+#header{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+
+
+
+h1{
+    width: 150px;
+}
+
+.nav{
+    position: absolute;
+    bottom: 0; left: 200px;
+}
+.nav>ul{
+    display: flex;
+}
+.nav>ul>li{
+    margin-right: 25px;
+}
+.nav>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav>ul>li:hover{
+    background-color: #fff;
+}
+.nav>ul>li:hover>a{
+    color: #000;
+}
+
+.sub{}
+.sub>.lang{}
