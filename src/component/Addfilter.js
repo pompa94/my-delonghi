@@ -3,7 +3,7 @@ import './Addfilter.css'
 
 import {BsSliders} from 'react-icons/bs'
 
-function Addfilter({listChange}){
+function Addfilter(/* {listChange} */){
     return(
         <div id="filter">
             <dl className="filterClick">
@@ -20,15 +20,15 @@ function Addfilter({listChange}){
                         </dl>
                 <dl className="itemColor">
                             <dt>컬러</dt>
-                            <dd onClick={
+                            <dd /* onClick={
                                 colorChange('black')
-                            }>블랙</dd>
-                            <dd onClick={
+                            } */>블랙</dd>
+                            <dd /* onClick={
                                 colorChange('silver')
-                            }>실버</dd>
-                            <dd onClick={
+                            } */>실버</dd>
+                            <dd /* onClick={
                                 colorChange('silver&black')
-                            }>블랙&실버</dd>
+                            } */>블랙&실버</dd>
                         </dl>
                 <dl className="itemType">
                             <dt>타입</dt>

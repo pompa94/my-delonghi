@@ -19,11 +19,11 @@ const [list,setList] = useState([])
 // const [listChange,setListChange] = 
 
 // 필터
-const filterList = list.filter(
-    (item)=>{
-        item.color === colorChange
-    }
-)
+// const filterList = list.filter(
+//     (item)=>{
+//         item.color === colorChange
+//     }
+// )
 
   // useCallback
   // 데이터 통신으로 가져오기
@@ -45,7 +45,7 @@ const filterList = list.filter(
             <MainTop />
             <div id="all">
                 <Addfilter 
-                colorChange={mycolor=>setList(mycolor)}
+                // colorChange={mycolor=>setList(mycolor)}
                 />
                 <div id="product">
                     <ul>
@@ -53,7 +53,7 @@ const filterList = list.filter(
                             // 반복문
                             // AppointData.map(
                             // list.map(
-                            filterList.map(
+                            list.map(
                                 (appointment)=>(<AddList 
                                 key={appointment.id}
                                 appointment={appointment}
