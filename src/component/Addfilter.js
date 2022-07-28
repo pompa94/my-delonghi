@@ -3,7 +3,7 @@ import './Addfilter.css'
 
 import {BsSliders} from 'react-icons/bs'
 
-function Addfilter(/* {listChange} */){
+function Addfilter({handleFilter}){
     return(
         <div id="filter">
             <dl className="filterClick">
@@ -20,15 +20,9 @@ function Addfilter(/* {listChange} */){
                         </dl>
                 <dl className="itemColor">
                             <dt>컬러</dt>
-                            <dd /* onClick={
-                                colorChange('black')
-                            } */>블랙</dd>
-                            <dd /* onClick={
-                                colorChange('silver')
-                            } */>실버</dd>
-                            <dd /* onClick={
-                                colorChange('silver&black')
-                            } */>블랙&실버</dd>
+                            <dd onClick={()=> handleFilter('color', 'black')}>블랙</dd>
+                            <dd onClick={()=> handleFilter('color', 'silver')}>실버</dd>
+                            <dd onClick={()=> handleFilter('color', 'silver&balck')}>블랙&실버</dd>
                         </dl>
                 <dl className="itemType">
                             <dt>타입</dt>
@@ -39,7 +33,7 @@ function Addfilter(/* {listChange} */){
                     <li>가격</li>
                     <li>
                         <label htmlFor="userMax">최고가격</label>
-                        <input id="userMax" readonly />
+                        <input id="userMax" readOnly />
                     </li>
                     <li>
                         <input type="range" min="500000" max="1200000" />

@@ -39,7 +39,7 @@ function Nav(){
                     </li>
                 </ul>
             </nav>
-            <div className="sub">
+            <div className="subMenu">
                 <dl className="lang">
                     <dt>
                         <p>
@@ -65,7 +65,7 @@ function Nav(){
                         </dl>
                     </dd>
                 </dl>
-                <dl class="search">
+                <dl className="searchBar">
                     <dt><input type="text" placeholder="검색" /></dt>
                     <dd><FaSearch /></dd>
                 </dl>        

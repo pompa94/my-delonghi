@@ -48,21 +48,21 @@ h1{
     color: #000;
 }
 
-.sub{
+.subMenu{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.sub>.lang{
+.subMenu>.lang{
     font-size: 18px;
     font-weight: bold;
     color: #fff;
 }
-.sub>.lang>dt:hover+dd{
+.subMenu>.lang>dt:hover+dd{
     display: block;
 }
-.sub>.lang>dd{
+.subMenu>.lang>dd{
     display: none;
     width: 15%;
     background-color: #fff;
@@ -73,27 +73,27 @@ h1{
     border: 2px solid greenyellow;
     color: #000;
 }
-.sub>.lang>dd>dl{
+.subMenu>.lang>dd>dl{
     margin-top: 20px;
 }
-.sub>.lang>dd>dl>dd{
+.subMenu>.lang>dd>dl>dd{
     margin-bottom: 20px;
     padding: 10px 0;
     border-bottom: 1px solid #000;
 }
 
-.sub>.search{
+.subMenu>.searchBar{
     display: flex;
     font-size: 20px;
 }
-.sub>.search>dt{
+.subMenu>.searchBar>dt{
     margin-right: 10px;
 }
-.sub>.search>dt>input{
+.subMenu>.searchBar>dt>input{
     width: 150px;
     line-height: 20px;
     text-indent: 10px;
 }
-.sub>.search>dd{
+.subMenu>.searchBar>dd{
     color: #fff;
 }

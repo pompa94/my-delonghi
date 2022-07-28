@@ -16,6 +16,8 @@ import './App.css'
 function App(){
 const [list,setList] = useState([])
 
+const [original,setOriginal] = useState()
+
 // const [listChange,setListChange] = 
 
 // 필터
@@ -32,7 +34,9 @@ const [list,setList] = useState([])
       /* fetch 안에 결로 입력 index.html의 위치에서 찾아가야됨 */
       fetch('./data.json')
       .then(response => response.json())
-      .then(data => setList(data))
+      .then(data => 
+        {setList(data),
+        setOriginal(data)})
     },[]
   )
 
@@ -45,7 +49,10 @@ const [list,setList] = useState([])
             <MainTop />
             <div id="all">
                 <Addfilter 
-                // colorChange={mycolor=>setList(mycolor)}
+                handleFilter={(type,filter)=>{
+                    const result = original.filter((item)=> item[type] === filter)
+                    setList(result)
+                }}
                 />
                 <div id="product">
                     <ul>
