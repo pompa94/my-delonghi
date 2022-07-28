@@ -17,15 +17,15 @@ function App(){
 const [list,setList] = useState([])
 
 const [original,setOriginal] = useState()
+// console.log(list)
 
-// const [listChange,setListChange] = 
+const [priceFilter,setPriceFilter] = useState(900000)
+
+
+
 
 // 필터
-// const filterList = list.filter(
-//     (item)=>{
-//         item.color === colorChange
-//     }
-// )
+
 
   // useCallback
   // 데이터 통신으로 가져오기
@@ -52,7 +52,9 @@ const [original,setOriginal] = useState()
                 handleFilter={(type,filter)=>{
                     const result = original.filter((item)=> item[type] === filter)
                     setList(result)
-                }}
+                    }}
+                priceFilter={priceFilter}
+                onPriceChange={myprice=>setPriceFilter(myprice)}
                 />
                 <div id="product">
                     <ul>
