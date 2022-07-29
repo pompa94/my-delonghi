@@ -40,6 +40,8 @@ const [priceFilter,setPriceFilter] = useState(900000)
     },[]
   )
 
+  
+
   // useEffect
   useEffect(()=>{fetchData()},[fetchData])
 
@@ -54,7 +56,11 @@ const [priceFilter,setPriceFilter] = useState(900000)
                     setList(result)
                     }}
                 priceFilter={priceFilter}
-                onPriceChange={myprice=>setPriceFilter(myprice)}
+                onPriceChange={myprice=>{
+                    const result2 = original.filter((item)=>item.price <= myprice)
+                    setList(result2)
+                    setPriceFilter(myprice)
+                }}
                 />
                 <div id="product">
                     <ul>

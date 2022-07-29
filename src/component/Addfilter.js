@@ -45,9 +45,8 @@ function Addfilter({handleFilter,priceFilter,onPriceChange}){
                     <li>가격</li>
                     <li>
                         <label htmlFor="userMax">최고가격 : 
-                        {priceFilter}
                         </label>
-                        <input id="userMax" readOnly />
+                        <input id="userMax" defaultValue={priceFilter} readOnly />
                     </li>
                     <li>
                         <Onchange 
